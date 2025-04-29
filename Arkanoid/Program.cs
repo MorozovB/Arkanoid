@@ -1,10 +1,15 @@
-﻿namespace Arkanoid
+﻿using Arkanoid.Core;
+
+namespace Arkanoid
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Game game = new Game("Arkanoid");
+            game.AskPlayerName();
+            game.ShowMenu();
+            game.Start();
         }
     }
 }

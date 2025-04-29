@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Arkanoid.Models
 {
-    internal class BlocksColor
+    internal enum BlocksColor
     {
+        Red = 1,
+        Yellow = 2,
+        Violet = 3,
     }
 }
